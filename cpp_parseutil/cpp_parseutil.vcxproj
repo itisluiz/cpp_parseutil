@@ -19,13 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="parseutil\include\keyvalue.h" />
     <ClInclude Include="parseutil\include\nav.h" />
     <ClInclude Include="parseutil\include\trim.h" />
     <ClInclude Include="parseutil\include\wideconvert.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="parseutil\source\keyvalue.cpp" />
     <ClCompile Include="parseutil\source\nav.cpp" />
     <ClCompile Include="parseutil\source\trim.cpp" />
     <ClCompile Include="parseutil\source\wideconvert.cpp" />

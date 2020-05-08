@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="parseutil\include\keyvalue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="parseutil\include\nav.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -29,9 +26,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="parseutil\source\keyvalue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="parseutil\source\nav.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

@@ -70,6 +70,23 @@ namespace parseutil
 		return true;
 	}
 
+	bool Nav::getRemains(std::string& stringOut, const char trimParam)
+	{
+		this->m_subEnd = this->m_navString.size();
+		return this->getSubstring(stringOut, false, trimParam);
+	}
+
+	bool Nav::getKeyValue(std::string& keyOut, std::string& valueOut, const char keyTrim, const char valueTrim)
+	{
+		this->reset();
+		if (!this->canNavigate())
+			return false;
+
+		this->getSubstring(keyOut, true, keyTrim);
+		this->getRemains(valueOut, valueTrim);
+		return true;
+	}
+
 	std::vector<std::string> Nav::split(const bool ignoreEmpty, const char trimParam)
 	{
 		std::vector<std::string> stringFragments;

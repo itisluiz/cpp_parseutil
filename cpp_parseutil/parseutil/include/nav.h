@@ -23,6 +23,8 @@ namespace parseutil
 		bool canNavigate() const;
 		bool navigate(const int count = 1);
 		bool getSubstring(std::string& stringOut, const int navigate = 0, const char trimParam = TRIM_NONE);
+		bool getRemains(std::string& stringOut, const char trimParam = TRIM_NONE);
+		bool getKeyValue(std::string& keyOut, std::string& valueOut, const char keyTrim = TRIM_NONE, const char valueTrim = TRIM_NONE);
 		std::vector<std::string> split(const bool ignoreEmpty = true, const char trimParam = TRIM_NONE);
 	};
 }
